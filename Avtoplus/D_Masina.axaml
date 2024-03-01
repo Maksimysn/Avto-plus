@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Width="600" Height="400"
+        x:Class="Avtoplus.D_Masina"
+        Title="Добавление транспортного средства">
+        
+                <DockPanel>
+                        <StackPanel>
+                                <TextBlock Text="Клиент:"/>
+                                <ComboBox Name="CustomerComboBox" Margin="0,0,0,10"/>
+                                <TextBlock Text="Марка:"/>
+                                <TextBox Name="MakeTextBox" Margin="0,0,0,10"/>
+                                <TextBlock Text="Модель:"/>
+                                <TextBox Name="ModelTextBox" Margin="0,0,0,10"/>
+                                <TextBlock Text="Год выпуска:"/>
+                                <TextBox Name="YearTextBox" Margin="0,0,0,10"/>
+                                <TextBlock Text="VIN:"/>
+                                <TextBox Name="VINTextBox" Margin="0,0,0,10"/>
+                                <TextBlock Text="Государственный регистрационный знак:"/>
+                                <TextBox Name="LicensePlateTextBox" Margin="0,0,0,10"/>
+                                <Button Content="Добавить" Click="AddVehicle_Click" DockPanel.Dock="Bottom" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                </DockPanel>
+
+        
+        
+</Window>

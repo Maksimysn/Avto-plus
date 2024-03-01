@@ -1,0 +1,45 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+    x:Class="Avtoplus.Masina"
+    Title="Транспортные средства">
+ <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Центрирование DataGrid -->
+        <DataGrid Name="VehiclesGrid" x:CompileBindings="False" SelectionChanged="VehiclesGrid_SelectionChanged"
+                  Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <DataGrid.Columns>
+                <!-- Ваши столбцы здесь -->
+                <DataGridTextColumn Header="ID" Binding="{Binding Path=VehicleID}" />
+                <DataGridTextColumn Header="Имя клиента" Binding="{Binding Path=Name}" />
+                <DataGridTextColumn Header="Марка" Binding="{Binding Path=Make}" />
+                <DataGridTextColumn Header="Модель" Binding="{Binding Path=Model}" />
+                <DataGridTextColumn Header="Год выпуска" Binding="{Binding Path=Year}" />
+                <DataGridTextColumn Header="VIN" Binding="{Binding Path=VIN}" />
+                <DataGridTextColumn Header="Гос. номер" Binding="{Binding Path=LicensePlate}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- StackPanel для кнопок -->
+        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,10">
+            <Button Content="Добавить данные" Click="OpenNextForm_Click"/>
+            <Button Content="Удалить" Click="DeleteVehiclesGrid_Click"/>
+            <Button Content="Редактировать" Click="EditVehiclesGrid_Click"/>
+        </StackPanel>
+
+        <!-- StackPanel для поиска и фильтрации -->
+        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10">
+            <TextBox x:Name="SearchTextBox" Width="150" Margin="0,0,5,0"/>
+            <ComboBox x:Name="MakeComboBox" Width="150" Margin="0,0,5,0" SelectionChanged="MakeComboBox_SelectionChanged"/>
+            <Button Content="Сбросить фильтр" Click="ResetFilterButton_Click"/>
+            <Button Content="Сортировать" Click="SortByMakeAndModel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

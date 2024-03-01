@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" 
+        Width="600" Height="400"
+        x:Class="Avtoplus.Main"
+        Title="Основное окно">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+    
+        <StackPanel Grid.Column="0" VerticalAlignment="Center" Margin="0,0,20,0">
+            <Button Content="Клиенты" Click="OpenKlientForm" Margin="0,0,0,20"/>
+            <Button Content="Транспорт" Click="OpenMasinaForm" Margin="0,0,0,20"/>
+            <Button Content="Ремонт" Click="OpenRemontForm" Margin="0,0,0,20"/>
+            <Button Content="Услуги" Click="OpenYslygaForm" Margin="0,0,0,20"/>
+            <Button Content="Запчасти" Click="OpenDetaliForm" Margin="0,0,0,20"/>
+            <Button Content="Заказы" Click="OpenZakazForm" Margin="0,0,0,20"/>
+            <Button Content="Персонал" Click="OpenRabForm" Margin="0,0,0,20"/>
+        </StackPanel>
+ 
+        <Image Grid.Column="1" Source="/Assets/Logo.png"
+               Width="400" Height="300"
+               HorizontalAlignment="Center" VerticalAlignment="Center"
+               Margin="0,0,20,0"/>
+    </Grid>
+</Window>

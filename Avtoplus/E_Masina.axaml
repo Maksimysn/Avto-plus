@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Avtoplus.E_Masina"
+        Title="Форма редактирования"
+            Width="400"
+            Height="500">
+        
+    <DockPanel>
+        <StackPanel Margin="10">
+            <TextBlock Text="Марка:"/>
+            <TextBox Name="MakeTextBox" Margin="0,0,0,10"/>
+            <TextBlock Text="Модель:"/>
+            <TextBox Name="ModelTextBox" Margin="0,0,0,10"/>
+            <TextBlock Text="Год выпуска:"/>
+            <TextBox Name="YearTextBox" Margin="0,0,0,10"/>
+            <TextBlock Text="VIN:"/>
+            <TextBox Name="VINTextBox" Margin="0,0,0,10"/>
+            <TextBlock Text="Гос. номер:"/>
+            <TextBox Name="LicensePlateTextBox" Margin="0,0,0,10"/>
+                <TextBlock Text="Клиент:"/>
+                <ComboBox Name="CustomerComboBox" Margin="0,0,0,10"/>
+            <Button Content="Сохранить изменения" Click="SaveChanges_Click" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </DockPanel>
+</Window>

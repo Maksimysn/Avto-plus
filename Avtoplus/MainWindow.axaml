@@ -1,0 +1,23 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d" Width="400" Height="300"
+            x:Class="Avtoplus.MainWindow"
+            Title="Авторизация">
+        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20">
+                <TextBlock FontSize="18" FontWeight="Bold" FontStyle="Italic" Margin="0 0 0 5">Логин</TextBlock>
+                <TextBox Name="Login" Width="300" Margin="0 0 0 5"/>
+                <TextBlock FontSize="18" FontWeight="Bold" FontStyle="Italic" Margin="0 0 0 5">Пароль</TextBlock>
+                <TextBox Name="Password" Width="300" Margin="0 0 0 5"/>
+                
+                <Button Name="Button" Height="40" Width="150" Margin="0 20" Click="Button_OnClick" HorizontalAlignment="Center">
+                    <Button.Content>
+                        <TextBlock FontSize="16" FontWeight="Bold">ВОЙТИ</TextBlock>
+                    </Button.Content>
+                </Button>
+                
+                
+            </StackPanel>
+</Window>

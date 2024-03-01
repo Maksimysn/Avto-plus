@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Avtoplus/App.axaml" value="Avtoplus/Avtoplus.csproj" />
+        <entry key="Avtoplus/D_Masina.axaml" value="Avtoplus/Avtoplus.csproj" />
+        <entry key="Avtoplus/E_Masina.axaml" value="Avtoplus/Avtoplus.csproj" />
+        <entry key="Avtoplus/Main.axaml" value="Avtoplus/Avtoplus.csproj" />
+        <entry key="Avtoplus/MainWindow.axaml" value="Avtoplus/Avtoplus.csproj" />
+        <entry key="Avtoplus/Masina.axaml" value="Avtoplus/Avtoplus.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
